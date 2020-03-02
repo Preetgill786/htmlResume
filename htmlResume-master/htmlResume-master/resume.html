@@ -14,6 +14,7 @@
   width: 50%;
   padding: 50px;
   height: 300px;
+  overflow: auto;
 }
 
 .clearfix::after {
@@ -77,23 +78,27 @@ th {
   color: white;
 }
 </style>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body style= "border: 2px solid #000000; background-color: #DAF7A6 ;" >
+<body style= "border: 10px dotted black;  background-image: radial-gradient(red, yellow, green);  overflow: auto; " >
+    
 <center>
-    <div style="background-color:MediumSeaGreen;" >
-	    <img src="f1.jpg" alt="Smiley face" style="float:right;width:110px;height:90px; margin-right: 10px;border: 3px solid #000000;">
+    <div style="background-image: linear-gradient(#C0C0C0, #808000); height:150px; " >
+	    <img src="f1.jpg" alt="Smiley face" style="float:right;width:150px;height:100px; margin-right: 50px; margin-top:20px; border: 3px solid #000000;">
 
-<h1>Harpreet Kaur
+<h1 >Harpreet Kaur
 </h1>
 <h3> 
     10 Lauraglen Crescent, Brampton, ON L6Y4W7 437-247-5370 
 
  <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">hksg1222@gmail.com </a> 
-</h3> </center>
+</h3> </center> 
 
 </div>
 <hr>
+<br>
+<br>
 <div class="clearfix">
   <div class="box" style="background-color:#bbb">
 <h2 style="padding-left: 20px"> <u> <b> HIGHLIGHTS OF QUALIFICATIONS AND SKILLS </u> </b> </h2>
@@ -120,8 +125,9 @@ th {
 </div>
 </div>
 <hr>
-
-<header>
+<br>
+<br>
+<header >
   <h2>WORK EXPERIENCE</h2>
 </header>
 
@@ -191,25 +197,31 @@ th {
 </table>
 </center>
 <hr>
-  <center>
+
+
  <fieldset Style="padding:20px">
-  <legend><h2> Any Queries....???</h2></legend>
+  <legend>  <h2> Any Queries....???</h2>  </legend>
 
 
 <form  style="font-size:20px"> <b>
  <pre> 
-    <img src="giphy.gif" alt="Smiley face" style="float:right;width:300px;height:400px; margin-right: 10px;">
-<label for="fname">First name:</label>   <input type="text" id="fname" name="fname"  value=" "><br>
-<label for="lname">Last name:</label>    <input type="text" id="lname" name="lname"  value=" "><br>
-<label for="subject">Subject:</label> 
- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width:300px;"></textarea> <br>
-	
-<button id="myBtn" onclick="javascript:alert('Thanks.. Query Submitted!')"  >Submit</button></b> </pre>
-  
+    <img src="giphy.gif" alt="Smiley face" style="float:right;width:300px;height:350px; margin-right: 150px;">
+<label for="fname">First name:</label> <input type="text" id="fname" name="fname"  value=" ">   <label for="lname">Last name:</label> <input type="text" id="lname" name="lname"  value=" "><br>
+<label for="lname">Gender:</label>  <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label> <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label> <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label><br>
+<label for="lname">Country:</label> <select id="cars"style="height:30px; width:150px;" >
+  <option value="India">India</option>
+  <option value="Canada">Canada</option>
+  <option value="USA">USA</option>
+  <option value="CHINA">CHINA</option>
+</select>    <label for="birthday"> Birthday:</label> <input type="date" id="birthday" name="birthday" style="height:30px;"> 
+<label for="subject">Subject:</label> <input type="text" id="subject" name="subject" placeholder="Write something.." style="height:100px; width:200px;"></input> <br>
+
+<button id="myBtn" onclick="javascript:alert('Thanks.. Query Submitted!')" style="height:40px; width:100px; margin-left: 300px;">Submit</button></b> </pre>
+  </left>
   </fieldset>
-  </center>
+
   <br>
-  <hr>
+  
 
 <script>
 var input = document.getElementById("myInput");
